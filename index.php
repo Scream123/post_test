@@ -10,10 +10,17 @@
     	<input type="submit" name="wipe" value="Clear old POSTs" />
 	</form>
 	<?php
-		if($_POST['wipe']) 
+		if(isset($_POST['wipe'])) 
 		{
         file_put_contents("dump.txt","This is where test POSTs will show up!");
     	}
+    ?>
+
+	<p> Don't reload the page, 
+		<?php echo '<a href="' . $_SERVER['REQUEST_URI'] . '">click here instead!</a>'; ?>
+	</p>
+
+    <?php
 
 		$dump = file_get_contents('dump.txt');
 		echo $dump;
