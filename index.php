@@ -12,7 +12,7 @@
 	<?php
 		if($_POST['wipe']) 
 		{
-        file_put_contents("dump.txt","");
+        file_put_contents("dump.txt","This is where test POSTs will show up!");
     	}
 
 		$dump = file_get_contents('dump.txt');
