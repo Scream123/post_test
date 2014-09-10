@@ -7,5 +7,6 @@
 1. Change `$url` in `api_test.php` to the url where `post_node.php` is hosted.
 2. Run api_test.php (doesn't have to be where hosted)
 3. Visit `index.html`. It will keep a running record of everything you send with `api_test.php`.
+4. You may have to change permissions, such as `sudo chmod 666 dump.txt`
 
 #### Uses the PHP cURL library
