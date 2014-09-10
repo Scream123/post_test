@@ -12,7 +12,7 @@
 	<?php
 		if(isset($_POST['wipe'])) 
 		{
-        file_put_contents("dump.txt","This is where test POSTs will show up!");
+        file_put_contents("dump.txt","This is where test POSTs will show up!<br><br><pre>array('made by' => 'sam havens')</pre>");
     	}
     ?>
 
