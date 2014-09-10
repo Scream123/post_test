@@ -31,7 +31,7 @@ function curl_post($url, array $post = NULL, array $options = array())
 
      if(curl_exec($ch) === false)
      {
-        $alert = 'Curl error: ' . curl_error($ch);
+        $alert = 'Curl error ' . curl_error($ch);
      }
      else
      {
@@ -41,10 +41,11 @@ function curl_post($url, array $post = NULL, array $options = array())
     return $alert;
 }
 
-for ($i=0; $i < 20; $i++) 
-{ 
-    $post[$i] = "value" . $i;
-}
 
+$post = array(
+    'made by' => 'sam havens',
+    'use freely' => 'be nice');
 
 curl_post($url, $post);
+
+}
