@@ -7,7 +7,7 @@ Test API sending
 */
 
 
-$url = 'http://www.gtvintage.com/post_test/post_node.php';
+$url = $_SERVER['REQUEST_URI'] . 'index.php';
 
 
 function curl_post($url, array $post = NULL, array $options = array())
