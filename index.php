@@ -9,34 +9,41 @@
 </head>
 <body>
 	<div class="container">
-	<h3 class="main-header">Test POST node</h3>
-	<br> <p> Send test POSTs to '/post_node.php'.
-	<br>Append '?response=reject' to the URL
-	to have the server reject the POST.</p>
-	<div class="container">
-	<br>
-	<form method="post">
-    	<input type="submit" name="wipe" value="Clear old POSTs" /><br><br>
-	</form>
+		<div class="jumbotron">
+			<h1 class="main-header">Test POST node</h1><br>
+			<h3>Instructions:</h3>
+			<ul>
+				<li> Send test POSTs to '/post_node.php'.</li>
+				<li>Append '?response=reject' to the URL to have the server reject the POST.</li>
+			</ul>
+		</div>
 
-	</div>
-	<?php
-		if(isset($_POST['wipe'])) 
-		{
-        file_put_contents("dump.txt","This is where test POSTs will show up!<br><br><pre>array('made by' => 'sam havens',
-    'use freely' => 'be nice');</pre>");
-    	}
-    ?>
+		<br>
+			<?php echo '<a class="btn btn-primary btn-lg" href="' . $_SERVER['REQUEST_URI'] . 
+			'">Don\'t reload the page; click here instead!</a>'; ?>
+		<br>
 
-	<br><div class="container"><p> Don't reload the page, 
-		<?php echo '<a href="' . $_SERVER['REQUEST_URI'] . '">click here instead!</a>'; ?>
-	</p></div>
+		<br>
+		<form method="post">
+	    	<button type="submit" name="wipe" value="Clear old POSTs" class="btn btn-danger btn-lg">
+	    	Clear old Posts</button><br><br>
+		</form>
 
-    <?php
+		<?php
+			if(isset($_POST['wipe'])) 
+			{
+	        file_put_contents("dump.txt","<h4>This is where test POSTs will show up!</h4><br><br><pre>array('made by' => 'sam havens',
+	    'use freely' => 'be nice');</pre>");
+	    	}
+	    ?>
 
-		$dump = file_get_contents('dump.txt');
-		echo $dump;
-	?>
+		<hr>
+		<br>
+	    <?php
+
+			$dump = file_get_contents('dump.txt');
+			echo $dump;
+		?>
 	</div>
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>

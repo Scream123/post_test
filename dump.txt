@@ -1,2 +1,2 @@
-This is where test POSTs will show up!<br><br><pre>array('made by' => 'sam havens',
-    'use freely' => 'be nice');</pre>
+<h4>This is where test POSTs will show up!</h4><br><br><pre>array('made by' => 'sam havens',
+	    'use freely' => 'be nice');</pre>
