@@ -18,16 +18,18 @@
 			</ul>
 		</div>
 
-		<br>
-			<?php echo '<a class="btn btn-primary btn-lg" href="' . $_SERVER['REQUEST_URI'] . 
-			'">Don\'t reload the page; click here instead!</a>'; ?>
-		<br>
+		<div class="well" style="max-width: 50%; margin: 0 auto 10px;">
+			<br>
+				<?php echo '<a class="btn btn-primary btn-lg btn-block" href="' . $_SERVER['REQUEST_URI'] . 
+				'">Don\'t reload the page; click here instead!</a>'; ?>
+			<br>
 
-		<br>
-		<form method="post">
-	    	<button type="submit" name="wipe" value="Clear old POSTs" class="btn btn-danger btn-lg">
-	    	Clear old Posts</button><br><br>
-		</form>
+			<br>
+			<form method="post">
+		    	<button type="submit" name="wipe" value="Clear old POSTs" class="btn btn-danger btn-lg btn-block">
+		    	Clear old Posts</button><br><br>
+			</form>
+		</div>
 
 		<?php
 			if(isset($_POST['wipe'])) 
