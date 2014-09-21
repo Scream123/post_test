@@ -1,2 +1,2 @@
-<h4>This is where test POSTs will show up!</h4><br><br><pre>array('made by' => 'sam havens',
-	    'use freely' => 'be nice');</pre>
+<pre><b><h4>POSTed data:</h4></b><br><br>('made by' => 'sam havens',
+'use freely' => 'be nice');</pre>
