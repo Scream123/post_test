@@ -25,7 +25,7 @@
 		        <li><a href="#data">POSTed Data</a></li>
 		      </ul>
 		      <ul class="nav navbar-nav navbar-right">
-		      <li><a href="#form">Test form</a></li>
+		      <li><a href="#form">Test form will go here</a></li>
 		        <li><a href="#what">What is this?</a></li>
 		      </ul>
 		    </div><!-- /.navbar-collapse -->
@@ -70,28 +70,7 @@
 			echo $dump;
 		?>
 
-		<div class="well" id="form">
-		<h4>A Form to Use for Testing</h4>
-			<form class="form-horizontal" role="form" id="urlform" method="post" action="/post_node.php">
-			<div id="newfield"></div>
-			  <div class="form-group">
-			    <label for="addfield" class="col-sm-2 control-label">Field Name:</label>
-			    <div class="col-sm-10">
-			      <input type="text" class="col-md-4" id="addfield" name="addfield">
-			    </div>
-			  </div>
-			  <div class="form-group">
-			    <div class="col-sm-10">
-			      <button class="btn btn-default" id="addfieldbutton">Add Field</button>
-			    </div>
-			  </div>
-			  <div class="form-group">
-			    <div class="col-sm-10">
-			      <button class="btn btn-primary" type="submit">POST to /post_node.php</button>
-			    </div>
-			  </div>
-			</form>
-		</div>
+
 
 		<div class="well" id="what">
 			<p><h4>Test POST node</h4>The test POST node allows you to test a POST (of the HTTP variety) before use in production
@@ -107,5 +86,7 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+
+
 </body>
 </html>
