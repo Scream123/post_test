@@ -9,7 +9,7 @@ Test API sending
 error_reporting(E_ERROR | E_WARNING | E_PARSE | E_NOTICE);
 
 //$url = $_SERVER['REQUEST_URI'] . 'post_node.php'; // may need to set this manually if you are using locally
-$url = 'http://192.168.1.104/post_test/post_node.php';
+$url = 'http://192.168.1.104/post_test/post_node.php'; // or wherever this is hosted
 
 function curl_post($url, array $post = NULL, &$status, array $options = array())
 {
