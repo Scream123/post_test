@@ -1,5 +1,5 @@
 <?php
-	
+	header("Access-Control-Allow-Origin: *");
 	//this is where POSTs are sent to
 
 	// If index.php has radio button for reject checked, reject incoming POSTS
